@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#FFFFFF"
+    tools:context=".GUI.OneStory">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_2"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgrounddep">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/layout_top">
+
+                <RelativeLayout
+                    android:id="@+id/layout_story"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <TextView
+                        android:id="@+id/lbl_title_story"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textline_2"
+                        android:layout_margin="2dp"
+                        android:textStyle="bold"
+                        android:text="Title"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:id="@+id/lbl_body_story"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"
+                        android:layout_below="@id/lbl_title_story"
+                        android:layout_margin="2dp"
+                        android:padding="5dp"
+                        android:text="Body"
+                        android:scrollbars="vertical"
+                        android:layout_above="@id/lblngayDang_One"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/lblngayDang_One"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_margin="2dp"
+                        android:gravity="right"
+                        android:layout_alignParentBottom="true"
+                        android:text="Ngày đăng: "/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutTacGia"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/layout_story"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/img_account"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/account" />
+
+                    <TextView
+                        android:id="@+id/lblNameAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@id/img_account"
+                        android:gravity="center_vertical"
+                        android:text="Tên tác giả............................."
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutTacGia"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:id="@+id/layout_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:weightSum="2"
+                        android:background="#000000"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/buttonLike_O"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="#000000"
+                            android:src="@drawable/ic_like" />
+
+                        <TextView
+                            android:id="@+id/textLike_O"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:id="@+id/layout_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@id/layout_like"
+                        android:weightSum="2"
+                        android:background="#000000"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/buttonComment_O"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="#000000"
+                            android:src="@drawable/ic_comment" />
+
+                        <TextView
+                            android:id="@+id/textComment_O"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:id="@+id/layout_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="right"
+                        android:weightSum="2"
+                        android:background="#000000"
+                        android:layout_toRightOf="@id/layout_comment"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/buttonShare_O"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="#000000"
+                            android:src="@drawable/ic_share" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/textShare_O"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_top"
+                android:layout_above="@id/layout_bottom">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_cmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:layout_alignParentBottom="true">
+
+                <EditText
+                    android:id="@+id/txtComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/btnSend"
+                    android:textColor="#000000"
+                    android:hint="Nhập bình luận của bạn..."
+                    android:textColorHint="#000000"
+                    android:textSize="13sp"/>
+
+                <ImageButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/send"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/setting"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuFollow"
+        android:icon="@drawable/follow"
+        android:title="@string/follow"
+        app:showAsAction="ifRoom"/>
+</menu>

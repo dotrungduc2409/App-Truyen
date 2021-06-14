@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc rằng mình đã thật sự có tài khoản?"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lblName">
+        <Button
+            android:id="@+id/btnYes_TK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vâng! Tôi chắc chắn"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnNo_TK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Tôi không nhớ rõ lắm"
+            android:background="#000000"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alfa_slab_one</item>
+        <item>@font/anton</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/arizonia</item>
+        <item>@font/atma_light</item>
+        <item>@font/bangers</item>
+        <item>@font/brawler</item>
+        <item>@font/cherry_cream_soda</item>
+        <item>@font/faster_one</item>
+    </array>
+</resources>

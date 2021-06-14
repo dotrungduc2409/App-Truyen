@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:layout_margin="5dp"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/img_account_cmt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/account" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/img_account_cmt"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="90dp">
+        <TextView
+            android:id="@+id/lbl_taiKhoan_cmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textline"
+            android:textColor="#FFFFFF"
+            android:text="Tài khoản...."
+            android:layout_margin="2dp"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/lbl_binhLuan_cmt"
+            android:layout_below="@id/lbl_taiKhoan_cmt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bình luận...."
+            android:textColor="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:layout_margin="2dp"
+            android:scrollbars="vertical"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+</RelativeLayout>

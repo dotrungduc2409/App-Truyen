@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GUI.TaiKhoan_Activity"
+    android:background="@drawable/header_login">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="THÔNG TIN TÀI KHOẢN"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:textColor="#FB0600"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlChuSoHuu"
+        android:layout_below="@id/lblTitle"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Chủ sở hữu: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblChuSoHuu"/>
+        <EditText
+            android:id="@+id/txtChuSoHuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblChuSoHuu"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlSDT"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlChuSoHuu">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Số điện thoại: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblSDT"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtSDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblSDT"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlGioiTinh"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlSDT">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Giới tính: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblGioiTinh"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rdGioiTinh"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/lblGioiTinh"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rdNam"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:text="Nam"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/rdNu"
+                android:layout_weight="1"
+                android:text="Nữ"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlEmail"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlGioiTinh">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Email: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblEmail"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblEmail"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlTaiKhoan"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlEmail">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Tài khoản: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblTaiKhoan"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblTaiKhoan"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlMatKhau"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlTaiKhoan">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Mật khẩu: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblMatKhau"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblMatKhau"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pnlNhapLaiMK"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlMatKhau">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Nhập lại MK: "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lblNhapLaiMK"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtNhapLaiMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblNhapLaiMK"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/pnlButton"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pnlNhapLaiMK">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LƯU THÔNG TIN"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_ui"
+                android:id="@+id/btnLuu"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BỎ QUA"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bt_uifb"
+                android:layout_weight="1"
+                android:id="@+id/btnBoQua"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

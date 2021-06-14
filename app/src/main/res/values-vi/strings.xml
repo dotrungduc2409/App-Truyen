@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Những câu chuyện</string>
+    <string name="about">Thông tin</string>
+    <string name="settings">Cài đặt</string>
+    <string name="account">Tài khoản</string>
+    <string name="title_story">Tên truyện</string>
+    <string name="body_story">Thân truyện...........</string>
+    <string name="welcome_to_stories">Chào mừng đến với thế giới của những câu chuyện</string>
+    <string name="login">Đăng nhập</string>
+    <string name="username">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_your_password">Quên mật khẩu?</string>
+    <string name="login_with_facebook">Đăng nhập với Facebook</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="email">Địa chỉ Email</string>
+    <string name="retype_password">Nhập lại mật khẩu</string>
+</resources>
